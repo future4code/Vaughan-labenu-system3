@@ -1,4 +1,4 @@
-import { Usuario } from "./Usuario";
+
 
 export enum ESPECIALIDADE_DOCENTE {
   REACT = "REACT",
