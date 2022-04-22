@@ -32,8 +32,8 @@ export class Docente {
   }
 };
 // Anderson
-// Criar docente
-// Buscar todas as pessoas docentes
+// Criar docente - Feito
+// Buscar todas as pessoas docentes - Feito
 
 // Gabi
 // Mudar docente de turma

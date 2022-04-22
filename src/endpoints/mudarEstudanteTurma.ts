@@ -4,7 +4,7 @@ import { connection } from "../data/connection";
 export const mudarEstudanteTurma = async (req: Request, res: Response) => {
     try {
         const { turmaId } = req.body
-        const id = req.params
+        const {id} = req.params
 
         const estudante = await connection("Estudante")
 
