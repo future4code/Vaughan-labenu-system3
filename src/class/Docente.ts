@@ -36,4 +36,4 @@ export class Docente {
 // Buscar todas as pessoas docentes - Feito
 
 // Gabi
-// Mudar docente de turma
+// Mudar docente de turma - Feito
