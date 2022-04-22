@@ -28,4 +28,4 @@ export class Estudante extends Usuario {
 // Buscar estudantes através do nome
 
 // Gabi
-// Mudar estudante de turma
+// Mudar estudante de turma - Feito
