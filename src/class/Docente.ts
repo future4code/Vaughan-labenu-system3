@@ -1,6 +1,6 @@
 import { Usuario } from "./Usuario";
 
-export enum TEACHER_SPECIALTY {
+export enum ESPECIALIDADE_DOCENTE {
   REACT = "REACT",
   REDUX = "REDUX",
   CSS = "CSS",
@@ -9,20 +9,28 @@ export enum TEACHER_SPECIALTY {
   OOP = "OOP",
   BACKEND = "BACKEND",
 }
-
-export class Teacher extends Usuario {
+export class Docente {
+  public id: string;
+  public nome: string;
+  public email: string;
+  public data_nasc: Date;
+  public turma_id: string;
+  // public especialidades: ESPECIALIDADE_DOCENTE[];
   constructor(
-    public id: string,
-    public nome: string,
-    public email: string,
-    public dataNascimento: string,
-    public turmaId: string,
-    public especialidades: TEACHER_SPECIALTY[]
+    nome: string,
+    email: string,
+    data_nasc: Date,
+    turma_id: string,
+    // especialidades: ESPECIALIDADE_DOCENTE[]
   ) {
-    super(id, nome, email, dataNascimento, turmaId)
+    this.id = String(Date.now());
+    this.nome = nome;
+    this.email = email;
+    this.data_nasc = data_nasc;
+    this.turma_id = turma_id;
+    // this.especialidades = especialidades;
   }
 };
-
 // Anderson
 // Criar docente
 // Buscar todas as pessoas docentes
