@@ -18,7 +18,7 @@ export class Turma {
 // Criar turma - Feito
 
 // Wellington
-// Buscar turmas ativas
+// Buscar turmas ativas - Feito (Anderson e Gabi)
 
 // Gabi
 // Mudar turma de módulo - Feito
