@@ -6,10 +6,12 @@ export default async function buscarEstudantes(
     res: Response
  ): Promise<void> {
     try {
+        const {name} = req.query
         //  if (!id && !nome) {
         //         throw new Error("É necessário informar o nome do estudante.")
             // } else {
                 let estudantes = await connection("Estudante")
+                                        .where('nome', 'like', `%${name}%`)
                 
                 if (!estudantes) {
                     throw new Error("Estudante não encontrado.")

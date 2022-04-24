@@ -12,7 +12,7 @@ export const criarEstudante = async (req: Request, res: Response): Promise<any> 
             let novoEstudante = new Estudante(nome, email, data_nasc, turma_id)
             await connection("Estudante")
                 .insert(novoEstudante);
-            res.status(201).send("Estudante criada com sucesso.")
+            res.status(201).send("Estudante criado com sucesso.")
       //  }
     } catch (error: any) {
         if (error.message === "Todos os campos devem ser preenchidos.") {
