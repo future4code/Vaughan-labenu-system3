@@ -7,15 +7,13 @@ import { mudarDocenteTurma } from "./endpoints/mudarDocenteTurma";
 import { criarEstudante } from "./endpoints/criarEstudante";
 import buscarTurma from "./endpoints/buscarTurmas";
 import buscarEstudantes from "./endpoints/buscarEstudantes";
+import { mudarEstudanteTurma } from "./endpoints/mudarEstudanteTurma";
 
-// const newClass: CreateClass = new CreateClass
-// let addClass = newClass.createClass
+app.post("/turma", criarTurma)
 
-app.post("/class", criarTurma)
+app.get("/turma", buscarTurma)
 
-app.put("/class/:idTurma", mudarModulo)
-
-app.get("/class", buscarTurma)
+app.put("/turma/:idTurma", mudarModulo)
 
 app.post("/docente", criarDocente)
 
@@ -27,3 +25,4 @@ app.post("/estudante", criarEstudante)
 
 app.get("/estudante", buscarEstudantes)
 
+app.put("/estudante/:id", mudarEstudanteTurma)
