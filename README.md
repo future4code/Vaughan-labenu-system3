@@ -1,4 +1,13 @@
-## LabenuSystem:
+# LabenuSystem
+
+## Desenvolvedores
+- Anderson Felix
+- Gabriela Hermenegildo
+
+## Documentação
+https://documenter.getpostman.com/view/19294823/UyrBhvD9
+
+## Enunciado
 
 Você estuda na Labenu_ há tanto tempo que já parecem anos, não é? Então, hoje, vamos pedir para criar um sistema que represente o básico da nossa organização. 
 
